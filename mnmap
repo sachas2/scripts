@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# mnmap: Perform a quick scan and then an advanced scan on open ports
+if [ -z "$1" ]; then
+    echo "Usage: $0 <target>"
+    exit 1
+fi
+
+TARGET=$1
+
+# Quick scan
+echo "Performing quick scan on $TARGET..."
+nmap -p- --min-rate=1000 -T4 "$TARGET" -oG quick_scan
+
+# Extract open ports
+OPEN_PORTS=$(grep -oP '\d+/open' quick_scan | cut -d/ -f1 | tr '\n' ',' | sed 's/,$//')
+
+if [ -z "$OPEN_PORTS" ]; then
+    echo "No open ports found."
+    exit 1
+fi
+
+echo "Open ports found: $OPEN_PORTS"
+
+# Advanced scan on open ports
+echo "Performing advanced scan on open ports..."
+nmap -sV -sC -p "$OPEN_PORTS" "$TARGET" -oN advanced_scan
+
+echo "Advanced scan completed."
+

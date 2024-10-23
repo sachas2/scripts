@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# mffuf: Directory enumeration using ffuf
+if [ -z "$1" ]; then
+    echo "Usage: $0 <target>"
+    exit 1
+fi
+
+TARGET=$1
+WORDLIST="/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt" # Change the path as necessary
+
+echo "Starting directory enumeration on $TARGET..."
+ffuf -u "$TARGET/FUZZ" -w "$WORDLIST" -t 100 -o dir_enum_results.json
+
+echo "Directory enumeration completed."
+
