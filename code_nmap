@@ -1,0 +1,8 @@
+if [ $# -eq 0 ]; then
+    >&2 echo "No arguments provided"
+    exit 1
+fi
+touch resume.txt
+code . &
+ports=$(nmap -p- --min-rate=1000 -T4 $1 | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
+nmap -p$ports -sV -sC -A $1 >> nmap_result.txt

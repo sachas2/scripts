@@ -1,0 +1,505 @@
+session
+route_list
+route_del
+session
+listener_list
+listener_stop
+start
+ifconfig
+listener_add --addr 0.0.0.0:11600 --to 127.0.0.1:11601 --tcp
+route_del
+ifconfig
+help
+interface_list
+interface_del
+help
+ifdel
+ifdel --name robustlockjaw
+ifdel --name pivot2
+ifdel --name pivot3
+ifdel --name evolvingchamele
+session
+help
+ifcreate --name pivot1
+route_add --name pivot1 --route 172.16.1.0/24
+start
+start --name pivot1
+start --tun pivot1
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601 --tcp
+listener_stop
+listener_add --addr 172.16.1.100:11601 --to 127.0.0.1:11601 --tcp
+start
+ifdel
+ifdel --name pivot1
+session
+ifcreate --name pivot1
+route_add --name pivot1 --route 172.16.1.0/24
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+start --tun pivot1
+ifconfig
+route_list
+listener_list
+listener_add --addr 0.0.0.0:11600 --to 0.0.0.0:11601
+help
+session
+autorute
+autoroute -h
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+start
+ifdel
+ifdel --name pivot1
+autoroute
+session
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+session
+autoroute
+iflist
+ifcreate --name pivot2
+route_add --name pivot2 --route 172.16.2.0/24
+start --tun pivot2
+route_list
+help
+ifconfig
+session
+ifconfig
+session
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+listener_add -h
+listener_add --addr 0.0.0.0:11601 --to 0.0.0.0:11601
+listener_stop
+listener_add --addr 0.0.0.0:11601 --to 172.16.1.100:11601
+listener_stop
+listener_add --addr 0.0.0.0:11601 --to 0.0.0.0:11601
+iflist
+ifdel --name prepareswitch
+ifdel prepareswitch
+ifdel -help
+ifdel help
+ifdel
+ifdel --name pivot2
+ifdel --name preparedswitch
+ifdel --name strikingtalkbac
+ifdel --name exactwawawa
+session
+ifcreate --name pivot1
+route_add --name pivot1 --route 172.16.1.0/24
+start --tun pivot1
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+ifdel
+iflist
+ifdel pivot1
+ifdel --name pivot1
+session
+start --tun pivot1
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+ifconfig
+listener_stop
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601 --tcp
+ifconfig
+route_list
+iflist
+ifdel --name pivot1
+ifdel --name pivot2
+session
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601 --tcp
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601 --tcp
+listener_add --addr 0.0.0.0:11600 --to 127.0.0.1:11601
+iflist
+ifdel --name thankfullettuce
+sessio
+session
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+ifconfig
+iflist
+ifdel --name settlingnegativ
+session
+help
+autoroute
+iflist
+ifdel
+ifdel --name pivot1
+ifdel --name pivot2
+ifdel --name pivot3
+ifdel --name wisearchangle
+ifdel --name wisearchangel
+ifdel --name pivot1
+sessionb
+session
+autoroute
+start
+listener_list
+listener_add -addr
+listener_add --addr  0.0.0.0:8080 --to 127.0.0.1:8080
+listener_add --addr  0.0.0.0:9999 --to 127.0.0.1:9999
+listener_add --addr  0.0.0.0:9999 --to 0.0.0.0:9999
+listener_stop
+listener_add --addr  0.0.0.0:9999 --to 0.0.0.0:9999
+listener_add --addr  0.0.0.0:10000 --to 0.0.0.0:10000
+ifconfig
+listener_add --addr  0.0.0.0:5555 --to 0.0.0.0:5555
+listener_add --addr  0.0.0.0:5555 --to 127.0.0.1:5556
+listener_add --addr  0.0.0.0:5556 --to 127.0.0.1:5556
+session
+ifconfig
+iflist
+ifdel
+ifdel --name definitemystiqu
+sessions
+session
+help
+autoroute
+ls
+start
+listener_add --addr 0.0.0.0:8081 --to 127.0.0.1:8081
+iflist
+ifdel 1
+ifdel help
+ifdel --help
+ifdel --name modestbecatron
+session
+autoroute
+session
+autoroute
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_add --addr 0.0.0.0:9001 --to 127.0.0.1:9001
+iflist
+ifdel
+ifdel --name helpfultara
+session
+autoroute
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_add --addr 0.0.0.0:9001 --to 127.0.0.1:9001
+session
+autoroute
+help
+ifcreate --name pivot2
+route_add --name pivot2 --addr 192.168.210.0/24
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+session
+autoroute
+listner_add --addr 0.0.0.0:9000 --to 0.0.0.0:9000
+listener_add --addr 0.0.0.0:9000 --to 0.0.0.0:9000
+session
+ifcreate --name pivot2
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+session
+tunnel_list
+start --tun pivot2
+start -help
+start help
+help
+tunnel_stop help
+tunnel_stop -help
+tunnel_stop
+tunnel_stop
+start
+start --tun pivot2
+ifdel
+ifdel --name pivot2
+iflist
+tunnel_list
+tunnel_stop
+route_list
+route_del
+ifcreate --name pivot2
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+tunnel_list
+help
+session
+stop
+iflist
+ifdel --name amazingarachne
+ifdel --name pivot2
+iflist
+session
+autoroute
+session
+ifcreate --name pivot2
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+ifconfig
+listener_add --addr 0.0.0.0:9001 --to 127.0.0.1:9001
+sessiobn
+session
+autoroute
+ifcreate --name tmp
+route_add --name tmp --route 192.168.210.0/24
+iflist
+route_list
+route_del
+route_add --name tmp --route 192.168.210.0/24
+start --tun tmp
+route_list
+route_del
+route_list
+iflist
+ifdel --name pivot2
+ifdel --name tmp
+route_list
+route_del
+session
+ifcreate --name pivot2
+route_add --addr pivot2 --route 192.168.210.0/24
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+route_list
+iflist
+route_list
+route_del
+iflist
+ifdel
+ifdel --name pivot2
+ifcreate win
+ifcreate --name win
+route_add --name win --route 192.168.210.0/24
+start --tun win
+iflist
+ifdel -name win
+ifdel --name win
+route_del
+session
+ifcreate --name w
+route_add --name w --route 192.168.210.0/24
+start --tun w
+iflist
+ifdel --name w
+route_del
+session
+ifcreate t
+ifcreate --name t
+route_add --name t --route 192.168.210.0/24
+start --tun t
+listener_add --addr 0.0.0.0:9001 --to 127.0.0.1:9001
+session
+ifcreate --name r
+route_add --name r --route 192.168.210.0/24
+iflist
+ifdel --name t
+route_add --name r --route 192.168.210.0/24
+start --tun r
+iflist
+ifdel --name equippedmunster
+ifdel --name r
+route_list
+route_del
+start --tun r
+ifcreate w
+ifcreate --name w
+route_add --name w --route 192.168.210.0/24
+start --tun w
+session
+start --tun w
+ifconfig
+iflist
+route_list
+start --tun w
+ifcreate --name x
+route_add --name x --route 192.168.210.0/24
+iflist
+ifdel --name w
+ifdel --name x
+route_list
+session
+ifcreate --name p
+route_add --name p --route 192.168.210.0/24
+start --tun p
+iflist
+ifdel --name p
+session
+ifcreate --name c
+route_add --name c --route 192.168.210.0/24
+start --tun c
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8080
+listener_list
+listener_stop
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8081
+listener_add --addr 0.0.0.0:9001 --to 0.0.0.0:9001
+listener_add --addr 0.0.0.0:9002 --to 127.0.0.1:9002
+ifconfig
+listener_add --addr 0.0.0.0:80 --to 127.0.0.1:80
+iflist
+ifdel --name c
+session
+ifcreate l
+ifcreate --name l
+route_add --name l --route 192.168.210.0/24
+start --tun l
+listener_add --addr 0.0.0.0:53
+listener_add --addr 0.0.0.0:53 --to 127.0.0.1:53
+listener_add --addr 0.0.0.0:21 --to 127.0.0.1:21
+listener_add --addr 0.0.0.0:8081 --to 127.0.0.1:8081
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_del
+listener_stop
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9001
+listener_add --addr 0.0.0.0:7777 --to 0.0.0.0:7777
+listener_add --addr 0.0.0.0:7778 --to 0.0.0.0:7779
+listener_del
+listener_stop
+listener_list
+iflist
+ifdel --name l
+session
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+listener_list
+iflist
+ifdel --name pivot
+route_list
+session
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:8080
+ifconfig
+session
+ifconfig
+session
+listener_list
+listener_stop
+session
+listener_add --addr 0.0.0.0:443 --to 127.0.0.01:9000
+listener_add --addr 0.0.0.0: --to 127.0.0.01:9000
+listener_add --addr 0.0.0.0:80 --to 127.0.0.01:9000
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.01:11601
+ifconfig
+iflist
+listener_del
+listener_list
+listener_delete
+listener_stop
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:443
+listener_add --addr 0.0.0.0:11600 --to 127.0.0.1:443
+route_list
+iflist
+ifdel --name pivot
+route_list
+autoroute
+session
+autoroute
+listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:443
+ifconfig
+ifdel
+ifdel --name pivot
+iflist
+ifdel --name humblemandroid
+iflist
+session
+ifcreate --name pivot
+route_add --name pivot --addr 192.168.110.0/24
+route_add --name pivot --route 192.168.110.0/24
+start --tun pivot
+listener_add --addr 0.0.0.0:53 --to 127.0.0.1:443
+listener_add --addr 0.0.0.0:8080 --to 127.0.0.1:443
+listener_add --addr 0.0.0.0:23 --to 127.0.0.1:443
+session
+ifcreate --name pivot2
+route_add --name pivot2 --route 192.168.210.0/24
+start --tun pivot2
+listener_add --addr 0.0.0.0:21 --to 127.0.0.1:1080
+ifconfig
+session
+tun --start pivot2
+start --tun pivot2
+iflist
+ifdel --name pivot
+ifdel --name pivot2
+session
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+ifcreate --name pivot3
+route_del
+route_add --name pivot3 --route 192.168.210.0/24
+start --tun pivot3
+ifdel
+ifdel --name pivot3
+ifdel --name pivot
+ifdel --name pivot1
+session
+autoroute
+session
+ifcreate --name t
+route_add --name t --route 192.168.210.0/24
+start --tun t
+ifdel --name fairglitter
+ifdel --name t
+session
+autoroute
+iflist
+ifdel --name teachingarsenal
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+tunnel_stop
+start --tun pivot
+session
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+session
+listener_add --addr 0.0.0.0:53 --to 127.0.0.1:10000
+listener_add --addr 0.0.0.0:443 --to 127.0.0.1:10000
+listener_add --addr 0.0.0.0:21 --to 127.0.0.1:10000
+ifconfig
+listener_add --addr 0.0.0.0:23 --to 127.0.0.1:10000
+listener_add --addr 0.0.0.0:139 --to 127.0.0.1:10000
+listener_add --addr 0.0.0.0:445 --to 127.0.0.1:10000
+listener_list
+listener_stop
+session
+start --tun pivot
+iflist
+tunnel_list
+start --tun pivot
+ifdel --name pivot
+route_list
+session
+ifcreate --name t
+route_add --name t --route 192.168.210.0/24
+start --tun t
+session
+ifcreate --name pivot2
+route_add --name pivot2 --route 192.168.210.0/24
+session
+ifconfig
+lister_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listenerr_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_add --addr 0.0.0.0:9000 --to 127.0.0.1:9000
+listener_add --addr 0.0.0.0:445 --to 127.0.0.1:445
+ifconfig
+session
+iflist
+ifdel --name t
+ifdel --name pivot2
+route_list
+tunnel_list
+tunnel_stop --name t
+tunnel_stop --
+tunnel_stop
+help
+ifcreate --name p
+route_add --name p --route 192.168.210.0/24
+tunnel_start --tun p
+ifconfig
+listener_add --addr 0.0.0.0:7777 --to 127.0.0.1:7777
+iflist
+ifdel --name p
+route_list
+session
+ifcreate --name pivot
+route_add --name pivot --route 192.168.210.0/24
+start --tun pivot
+ifconfig

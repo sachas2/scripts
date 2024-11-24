@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Exécute ifconfig pour obtenir l'adresse IP
+output=$(ifconfig $1 | grep 'inet ' | awk '{print $2}')
+
+# Vérifie si un argument a été fourni
+if [ -n "$1" ]; then
+    echo -n "$output"   # Affiche sans saut de ligne
+else
+    echo "$output"      # Affiche avec saut de ligne
+fi
+
